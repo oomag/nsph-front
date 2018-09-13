@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Noosphere</title>
+        <meta http-equiv="Cache-Control" content="public" />
+        <meta http-equiv="Cache-Control" content="max-age=15000, must-revalidate" />
+        <meta name="Robots" content="INDEX, FOLLOW">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="x-rim-auto-match" content="none">
+                                <link rel="stylesheet" type="text/css" href="/en/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/en/css/app.min.css?v=0.0.2">
+        <link href="/en/img/favicon.png?v=0.0.2" rel="shortcut icon">
+        <link href="/en/img/favicon.png?v=0.0.2" rel="shortcut icon" type="image/x-icon">
+
+    </head>
+    <body>
+        
+        
+    <div class="wrapper">
+
+      <section class="section section-testnet">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="title-lg mb-3">Noosphere <span>TESTNET</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="testnet__items">
+                    <div class="testnet__item">
+                        <div class="testnet__title">
+                            Avg<br>
+                            TPB
+                        </div>
+                        <div class="testnet__number">
+                            <div class="number__line"></div>
+                            12.04
+                        </div>
+                    </div>
+                    <div class="testnet__item">
+                        <div class="testnet__title">
+                            Avg<br>
+                            TPS
+                        </div>
+                        <div class="testnet__number">
+                            <div class="number__line"></div>
+                            10.34
+                        </div>
+                    </div>
+                    <div class="testnet__item">
+                        <div class="testnet__title">
+                            Transactions<br>
+                            per day
+                        </div>
+                        <div class="testnet__number">
+                            <div class="number__line"></div>
+                            3546782
+                        </div>
+                    </div>
+                    <div class="testnet__item">
+                        <div class="testnet__title">
+                            Avg<br>
+                            TPT
+                        </div>
+                        <div class="testnet__number">
+                            <div class="number__line"></div>
+                            34.99
+                        </div>
+                    </div>
+                    <div class="testnet__item">
+                        <div class="testnet__title">
+                            Tokens<br>
+                            per day
+                        </div>
+                        <div class="testnet__number">
+                            <div class="number__line"></div>
+                            104567398
+                        </div>
+                    </div>
+                    <div class="testnet__item">
+                        <div class="testnet__title">
+                            Users<br>
+                            per day
+                        </div>
+                        <div class="testnet__number">
+                            <div class="number__line"></div>
+                            120865
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>      <section class="section section-graphs">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="testnet__block">
+                    <div class="graph__title">
+                        Tokens Movement per day
+                    </div>
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="testnet__block">
+                    <div class="graph__title">
+                        Transaction count
+                    </div>
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="testnet__block">
+                    <div class="graph__title">
+                        User type distribution
+                    </div>
+                    <canvas id="donughtChart"></canvas>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="testnet__block">
+                    <div class="graph__title">
+                        Geolocation of validator’s nodes
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>      <section class="section section-tables">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="testnet__block">
+                    <div class="graph__title">
+                        Block validations
+                    </div>
+                    <div class="testnet__table">
+                        <table class="tn-table__elem">
+                            <tr>
+                                <th>Block</th>
+                                <th>Validator Key</th>
+                                <th width="200">Transaction Count</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        4740
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjwOLY8EiQAhRmZLnYHFXFPCxpSOq7k7rWMZsQdE6l...
+                                    </a>
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        4740
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjwOLY8EiQAhRmZLnYHFXFPCxpSOq7k7rWMZsQdE6l...
+                                    </a>
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        4740
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjwOLY8EiQAhRmZLnYHFXFPCxpSOq7k7rWMZsQdE6l...
+                                    </a>
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        4740
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjwOLY8EiQAhRmZLnYHFXFPCxpSOq7k7rWMZsQdE6l...
+                                    </a>
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><a href="#" class="btn btn-default btn-round btn-small btn-testnet">Show all</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="testnet__block">
+                    <div class="graph__title">
+                        Last transactions
+                    </div>
+                    <div class="testnet__table">
+                        <table class="tn-table__elem">
+                            <tr>
+                                <th>Sender</th>
+                                <th>Receiver</th>
+                                <th>Tokens</th>
+                                <th>Type</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjw...
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjw...
+                                    </a>
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjw...
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjw...
+                                    </a>
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjw...
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjw...
+                                    </a>
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjw...
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjw...
+                                    </a>
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjw...
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" class="tn-table__link">
+                                        MFYwEAYHKoZIzj0CAQYFK4EEAAoDQgAEAyNqJjw...
+                                    </a>
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                                <td>
+                                    13
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><a href="#" class="btn btn-default btn-round btn-small btn-testnet">Show all</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+
+        
+        
+
+        <script type="text/javascript" src="/en/js/vendor.js?v=0.0.2"></script>
+        <script type="text/javascript" src="/en/js/app.js?v=0.0.2"></script>
+        <script type="text/javascript" src="/en/js/main.js?v=0.0.2"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script type="text/javascript" src="/en/js/graph.js"></script>
+                    </body>
+</html>
