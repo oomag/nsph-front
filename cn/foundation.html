@@ -275,7 +275,7 @@
 </footer>        <!-- Modal -->
 <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+        <div class="modal-content form">
             <div class="modal-header">
                 <div class="modal-title" id="exampleModalLabel">Sign up for updates</div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -293,25 +293,28 @@
                 </div>
                 <div class="modal-form">
                     <form action="/" class="modal-form-elem">
-                        <input type="email" class="modal-input" placeholder="Your e-mail">
+                        <input type="email" class="modal-input email_news_subscriber" placeholder="Your e-mail">
                     </form>
                 </div>
             </div>
             <div class="modal-footer">
                 <div class="row justify-content-center">
                     <div class="col-md-5">
-                        <button type="submit" class="btn btn-round btn-default btn-orange btn-fluid" id="submit">Sign
+                        <button type="submit" class="btn btn-round btn-default btn-orange btn-fluid submit_news" id="submit">Sign
                             up</button>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-9">
-                        <div class="hidden__text">
+                        <div class="form-group text-center modal-text">
+                            <p class="news-subscribe-error-message" style="padding-top:10px"></p>
+                        </div>
+<!--                         <div class="hidden__text">
                             <div class="modal-text">
                                 Almost finished... We need to confirm your email address. To complete the subscription
                                 process, please click the link in the email we just sent you.
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -325,7 +328,7 @@
 
         <script type="text/javascript" src="/en/js/vendor.js?v=0.0.2"></script>
         <script type="text/javascript" src="/en/js/app.js?v=0.0.2"></script>
-        <script type="text/javascript" src="/en/js/main.js?v=0.0.2"></script>
+        <script type="text/javascript" src="/en/js/main.js?v=0.0.3"></script>
             <script type="text/javascript" src="/en/js/technology.js?v=0.0.2"></script>
                     </body>
 </html>
