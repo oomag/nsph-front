@@ -43,7 +43,7 @@
                 <div class="testnet__items">
                     <div class="testnet__item">
                         <div class="testnet__title">
-                            Avg<br>
+                            Avg <a href="#" class="tooltip">?</a><br>
                             TPB
                         </div>
                         <div class="testnet__number">
@@ -53,7 +53,7 @@
                     </div>
                     <div class="testnet__item">
                         <div class="testnet__title">
-                            Avg<br>
+                            Avg <a href="#" class="tooltip">?</a><br>
                             TPS
                         </div>
                         <div class="testnet__number">
@@ -63,7 +63,7 @@
                     </div>
                     <div class="testnet__item">
                         <div class="testnet__title">
-                            Transactions<br>
+                            Transactions <a href="#" class="tooltip">?</a><br>
                             per day
                         </div>
                         <div class="testnet__number">
@@ -73,7 +73,7 @@
                     </div>
                     <div class="testnet__item">
                         <div class="testnet__title">
-                            Avg<br>
+                            Avg <a href="#" class="tooltip">?</a><br>
                             TPT
                         </div>
                         <div class="testnet__number">
@@ -83,7 +83,7 @@
                     </div>
                     <div class="testnet__item">
                         <div class="testnet__title">
-                            Tokens<br>
+                            Tokens <a href="#" class="tooltip">?</a><br>
                             per day
                         </div>
                         <div class="testnet__number">
@@ -93,7 +93,7 @@
                     </div>
                     <div class="testnet__item">
                         <div class="testnet__title">
-                            Users<br>
+                            Users <a href="#" class="tooltip">?</a><br>
                             per day
                         </div>
                         <div class="testnet__number">
@@ -108,38 +108,40 @@
 </section>      <section class="section section-graphs">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-6">
                 <div class="testnet__block">
                     <div class="graph__title">
-                        Tokens Movement per day
+                        Tokens Movement per day <a href="#" class="tooltip">?</a>
                     </div>
                     <canvas id="lineChart"></canvas>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-6">
                 <div class="testnet__block">
                     <div class="graph__title">
-                        Transaction count
+                        Transaction count <a href="#" class="tooltip">?</a>
                     </div>
                     <canvas id="barChart"></canvas>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-6">
                 <div class="testnet__block">
                     <div class="graph__title">
-                        User type distribution
+                        User type distribution <a href="#" class="tooltip">?</a>
                     </div>
                     <canvas id="donughtChart"></canvas>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-6">
                 <div class="testnet__block">
                     <div class="graph__title">
-                        Geolocation of validator’s nodes
+                        Geolocation of validator’s nodes <a href="#" class="tooltip">?</a>
                     </div>
-
+                    <div class="heatmap">
+                        <img src="/en/img/map.png" alt="" class="heatmap__pic">
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,14 +152,14 @@
             <div class="col-12">
                 <div class="testnet__block">
                     <div class="graph__title">
-                        Block validations
+                        Block validations <a href="#" class="tooltip">?</a>
                     </div>
                     <div class="testnet__table">
-                        <table class="tn-table__elem">
+                        <table class="tn-table__elem tn-table__elem--first">
                             <tr>
-                                <th>Block</th>
-                                <th>Validator Key</th>
-                                <th width="200">Transaction Count</th>
+                                <th class="td-first"><span>Block <img src="/en/img/testnet-icons/icon-1.png" alt="" class="table__icon"></span></th>
+                                <th class="td-middle"><span>Validator Key <img src="/en/img/testnet-icons/icon-2.png" alt="" class="table__icon"></span></th>
+                                <th class="td-last"><span>Transaction Count <img src="/en/img/testnet-icons/icon-3.png" alt="" class="table__icon"></span></th>
                             </tr>
                             <tr>
                                 <td>
@@ -231,15 +233,15 @@
             <div class="col-12">
                 <div class="testnet__block">
                     <div class="graph__title">
-                        Last transactions
+                        Last transactions <a href="#" class="tooltip">?</a>
                     </div>
                     <div class="testnet__table">
                         <table class="tn-table__elem">
                             <tr>
-                                <th>Sender</th>
-                                <th>Receiver</th>
-                                <th>Tokens</th>
-                                <th>Type</th>
+                                <th class="td-first"><span>Sender<img src="/en/img/testnet-icons/icon-4.png" alt="" class="table__icon"></span></th>
+                                <th class="td-first"><span>Receiver<img src="/en/img/testnet-icons/icon-5.png" alt="" class="table__icon"></span></th>
+                                <th class="td-last">Tokens</th>
+                                <th class="td-last">Type</th>
                             </tr>
                             <tr>
                                 <td>
