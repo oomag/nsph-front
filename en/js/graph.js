@@ -80,3 +80,23 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+
+var map = L.map('mapid', {
+    center: [51.505, -0.09],
+    zoom: 13
+});
+L.TileLayer.Kitten = L.TileLayer.extend({
+    getTileUrl: function(coords) {
+        var i = Math.ceil( Math.random() * 4 );
+        return "/en/img/map.png";
+    },
+    getAttribution: function() {
+        return "<a href='https://placekitten.com/attribution.html'>PlaceKitten</a>"
+    }
+});
+
+L.tileLayer.kitten = function() {
+    return new L.TileLayer.Kitten();
+}
+
+L.tileLayer.kitten().addTo(map);
