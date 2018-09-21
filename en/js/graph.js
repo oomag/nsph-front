@@ -81,22 +81,30 @@ var myChart = new Chart(ctx, {
     }
 });
 
+var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr});
+
 var map = L.map('mapid', {
-    center: [51.505, -0.09],
-    zoom: 13
-});
-L.TileLayer.Kitten = L.TileLayer.extend({
-    getTileUrl: function(coords) {
-        var i = Math.ceil( Math.random() * 4 );
-        return "/en/img/map.png";
-    },
-    getAttribution: function() {
-        return "<a href='https://placekitten.com/attribution.html'>PlaceKitten</a>"
-    }
+    center: [31.73, 0],
+    zoom: 1,
+    layers: grayscale
 });
 
-L.tileLayer.kitten = function() {
-    return new L.TileLayer.Kitten();
-}
+var dotIcon = L.icon({
+    iconUrl: '/en/img/marker.png',
+    iconSize: [10, 10]
+});
 
-L.tileLayer.kitten().addTo(map);
+L.marker([51.5, -0.09], {icon: dotIcon}).addTo(map);
+
+//var baseLayers = {
+//    "Grayscale": grayscale
+//};
+//
+//
+//L.control.layers(baseLayers).addTo(map);
+
