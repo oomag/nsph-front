@@ -9,7 +9,7 @@ $(function () {
     $('.qq-link').on('click', function(e) {
         e.preventDefault();
         if($(window).width <= 575) {
-            $('.qr-block').addClass('qr-block--active');
+            $('.qr-block').toggleClass('qr-block--active');
         }
     })
     $(document).mouseup(function (e) {
