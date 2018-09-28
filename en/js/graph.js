@@ -1,4 +1,4 @@
-//первый график
+//linear chart
 
 var ctx = document.getElementById("lineChart");
 var myChart = new Chart(ctx, {
@@ -32,7 +32,7 @@ var myChart = new Chart(ctx, {
     }
 });
 
-//второй график
+//bar chart
 
 var ctx = document.getElementById("barChart");
 var myChart = new Chart(ctx, {
@@ -66,7 +66,7 @@ var myChart = new Chart(ctx, {
     }
 });
 
-//пончик
+//donught
 
 var ctx = document.getElementById("donughtChart");
 var myChart = new Chart(ctx, {
@@ -87,7 +87,7 @@ var myChart = new Chart(ctx, {
     }
 });
 
-//Карта
+//map
 
 var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
         '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
