@@ -13,7 +13,7 @@ $(function () {
         }
     })
     $(document).mouseup(function (e) {
-        var div = $('.qr-block');
+        var div = $('.qq-link');
         if (!div.is(e.target)
                 && div.has(e.target).length === 0) {
             div.removeClass('qr-block--active');
