@@ -8,12 +8,10 @@ $(function () {
 
     $('.qq-link').on('click', function(e) {
         e.preventDefault();
-        if($(window).width <= 575) {
-            $('.qr-block').toggleClass('qr-block--active');
-        }
+        $('.qr-block').addClass('qr-block--active');
     })
     $(document).mouseup(function (e) {
-        var div = $('.qq-link');
+        var div = $('.qr-block');
         if (!div.is(e.target)
                 && div.has(e.target).length === 0) {
             div.removeClass('qr-block--active');
