@@ -8,6 +8,21 @@ $(function () {
 
 });
 
+$(function() {
+    $('.qq-link').on('click', function(e) {
+        e.preventDefault();
+        let qrLink = $(e.currentTarget);
+        qrLink.toggleClass('qq-link--active');
+    })
+    $(document).on('click', function (e) {
+        var div = $('.qq-link');
+        if (!div.is(e.target)
+                && div.has(e.target).length === 0) {
+            div.removeClass('qq-link--active');
+        }
+    });
+});
+
 $(function () {
     // $('#submit').on('click', e => {
     //  e.preventDefault();
