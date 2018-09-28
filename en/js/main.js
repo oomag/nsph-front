@@ -6,6 +6,13 @@ $(function () {
         APP.navbarScrolled(events);
     }
 
+    $('.qq-link').on('click', function(e) {
+        e.preventDefault();
+        if($(window).width <= 575) {
+            $('.qr-block').addClass('qr-block--active');
+        }
+    })
+
 });
 
 $(function () {
