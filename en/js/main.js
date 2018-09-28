@@ -6,18 +6,21 @@ $(function () {
         APP.navbarScrolled(events);
     }
 
+});
+
+$(function() {
     $('.qq-link').on('click', function(e) {
         e.preventDefault();
-        $('.qr-block').addClass('qr-block--active');
+        let qrLink = $(e.currentTarget);
+        qrLink.toggleClass('qq-link--active');
     })
-    $(document).mouseup(function (e) {
-        var div = $('.qr-block');
+    $(document).on('click', function (e) {
+        var div = $('.qq-link');
         if (!div.is(e.target)
                 && div.has(e.target).length === 0) {
-            div.removeClass('qr-block--active');
+            div.removeClass('qq-link--active');
         }
     });
-
 });
 
 $(function () {
