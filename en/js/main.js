@@ -10,6 +10,13 @@ $(function () {
         e.preventDefault();
         if($(window).width <= 575) {
             $('.qr-block').addClass('qr-block--active');
+            $(document).mouseup(function (e) {
+                var div = $('.qr-block');
+                if (!div.is(e.target)
+                        && div.has(e.target).length === 0) {
+                    div.removeClass('qr-block--active');
+                }
+            });
         }
     })
 
