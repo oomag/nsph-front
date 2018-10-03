@@ -41,13 +41,13 @@ var APP = {
             var interval = setInterval(function () {
 
                 if (index == 0) {
-                    if (i >= 3 && i <= 19) {
+                    if (i >= trans.lineStart && i <= trans.lineEnd) {
                         document.getElementById('submited-text').innerHTML += '<span class="mark">' + strings[index][i] + '</span>';
                     } else {
                         document.getElementById('submited-text').innerHTML += strings[index][i];
                     }
                 } else if (index == 1) {
-                    if (i >= 14 && i <= 27) {
+                    if (i >= trans.secondLineStart && i <= trans.secondLineEnd) {
                         document.getElementById('submited-text').innerHTML += '<span class="mark">' + strings[index][i] + '</span>';
                     } else {
                         document.getElementById('submited-text').innerHTML += strings[index][i];

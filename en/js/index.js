@@ -1,6 +1,6 @@
 $(function () {
 	setTimeout(function () {
-		APP.submitedText(['The service-oriented sharding paradigm', 'A NEW STEP IN THE EVOLUTION OF CLOUD TECHNOLOGY']);
+		APP.submitedText([trans.title, trans.sub]);
 	}, 1000);
 });
 
