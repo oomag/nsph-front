@@ -69,7 +69,7 @@ var APP = {
                     }, 3000)
                 }
 
-            }, 20);
+            }, trans.interval);
         }
 
         recurse(0);

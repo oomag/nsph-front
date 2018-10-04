@@ -4,5 +4,6 @@ const trans = {
     lineStart: 7,
     lineEnd: 10,
     secondLineStart: 6,
-    secondLineEnd: 10
+    secondLineEnd: 10,
+    interval: 50
 }
