@@ -13,9 +13,9 @@
         
                 	<link rel="stylesheet" type="text/css" href="/en/css/jquery.fancybox.min.css">
                         <link rel="stylesheet" type="text/css" href="/en/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="/en/css/app.min.css?v=1.0.3">
-        <link href="/en/img/favicon.png?v=1.0.3" rel="shortcut icon">
-        <link href="/en/img/favicon.png?v=1.0.3" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="/en/css/app.min.css?v=1.0.4">
+        <link href="/en/img/favicon.png?v=1.0.4" rel="shortcut icon">
+        <link href="/en/img/favicon.png?v=1.0.4" rel="shortcut icon" type="image/x-icon">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125722978-1"></script>
@@ -119,7 +119,7 @@
                     <img src="/en/img/ref-diapo-1.png" alt="" class="about-panel--macbook-img">
                     <a href="/en/img/anatomy.jpg" class="about-panel--link" data-fancybox="data-fancybox">
                         <p class="text-md text-center mb-0">
-                            See the scheme
+                            See the diagram
                         </p>
                         <img src="/en/img/glass.png" alt="" class="ml-2">
                     </a>
@@ -138,7 +138,7 @@
 
                     <div class="path--top">
                         <p class="mb-2 pb-1 text-md">
-                            Each shard in Noosphere is a blockchain capable of operating absolutely independently as it does not require any permanent connection with other shards
+                            Each shard in Noosphere is a blockchain capable of operating completely independently as they do not not require constant connection with other shards
                         </p>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                     <img src="/en/img/ref-diapo-2.png" alt="" class="about-panel--macbook-img">
                     <a href="/en/img/cbft.jpg" class="about-panel--link" data-fancybox="data-fancybox">
                         <p class="text-md text-center mb-0">
-                            See the scheme
+                            See the diagram
                         </p>
                         <img src="/en/img/glass.png" alt="" class="ml-2">
                     </a>
@@ -174,7 +174,7 @@
 
                     <div class="path--top">
                         <p class="mb-2 pb-1 text-md">
-                            A node that participates in the consensus algorithm, gathering of transactions, and forming and validation of blocks is a Twig Node. A node that participates in the CBFT consensus algorithm speeding up its operation is a Stem Node. The function of a Stem Node is exclusively auxiliary: the system can function without it, but a different consensus algorithm is used in this case (see the Consensus section for more information). Anyone can become a Twig Node for a shard by filing an application and passing selection (see the Technical White Paper for more information). A Stem Node is serviced by the creator of the shard if it is necessary, for its operation, to use the quick and efficient CBFT consensus algorithm. If the data processing speed requirements are not as important, a shard can function independently, using PoET without a Stem Node.
+                            The node that participates in the consensus algorithm, gathering transactions, forming and validating blocks is called the Twig Node. The node that participates in the CBFT consensus algorithm speeding up its operation is called the Stem Node. The function of the Stem Node is solely auxiliary: the system can function without it, but a different consensus algorithm will be used in that case (see the Consensus section for more information). Anyone can host a Twig Node for a shard by filing an application and passing the selection process (see the Technical White Paper for more information). The Stem Node is maintained by the creator of the shard if necessary, for its operation, to use the quick and efficient CBFT consensus algorithm. If the data processing speed requirements are not as important, a shard can function independently, using PoET without a Stem Node.
                         </p>
                     </div>
                 </div>
@@ -192,11 +192,11 @@
             <div class="col-10 text-right">
 
                 <div class="about-panel--macbook text-center">
-                    <div class="title-lg">Noosphere Shard Work Scheme</div>
+                    <div class="title-lg">Noosphere Shard Diagram</div>
                     <img src="/en/img/ref-diapo-3.png" alt="" class="about-panel--macbook-img">
                     <a href="/en/img/shards.jpg" class="about-panel--link" data-fancybox="data-fancybox">
                         <p class="text-md text-center mb-0">
-                            See the scheme
+                            See the diagram
                         </p>
                         <img src="/en/img/glass.png" alt="" class="ml-2">
                     </a>
@@ -206,7 +206,7 @@
             <div class="col-lg-4">
                 <div class="about-panel about-panel--left">
                     <div class="title-lg title-hr">
-                        There are<span class="d-none d-lg-block"></span>two ways<span class="d-none d-lg-block"></span>to implement<span class="d-none d-lg-block"></span>services at shards
+                        There are<span class="d-none d-lg-block"></span>two approaches<span class="d-none d-lg-block"></span>to creating<span class="d-none d-lg-block"></span>shard-services
                     </div>
                 </div>
             </div>
@@ -215,7 +215,7 @@
 
                     <div class="path--top">
                         <p class="mb-2 pb-1 text-md">
-                            The first method is to use the shard blockchain structure proper in which records of the key-value type are stored according to certain rules and it is these records that determine the functionality of the service. A typical example of this implementation is the DNS, routing, or certifying center services. The second method is more comprehensive and provides services that are more resource-consuming. Their operation requires computational work the result of which will actually determine the content of the blockchain (smart contracts), or else the blockchain will perform exclusively administrative functions if the output data are not meant for storage in the blockchain (rendering, scientific research, dApps). In both cases, every shard, as it is introduced to the system, must provide a description of its API in order to be used.<br>When a service shard is created, a token associated with it can also be created. Rules must be established for its generation when the shard works at the moment of registration at the Root Shard.
+                            The first approach is simply using the structure of blockchain shards that store key-value records that define the functionality of the service under defined rules. Typical examples of this implementation are DNS services, routing, validating centres. The second approach is more comprehensive, and it offers more resource-intensive services. Their operation requires computations that will define the contents of the blockchain (smart contracts), otherwise the blockchain will only carry out administrative functions when the output data is not intended to be stored on blockchain (rendering, scientific research, dApps). In both cases each shard must provide its API description upon its introduction to the system. When creating a service-shard, it is possible to create a token associated with it. In doing so, you must specify its generation rule with the shard working upon registering on Root Shard.
                         </p>
                     </div>
                 </div>
@@ -231,7 +231,7 @@
 
                     <div class="title-lg mb-4">SHARD FORKS</div>
                     <p class="text-md">
-                        Noosphere is free of the concept of forks. For a usual blockchain, a fork is a change of the<br>built-in operation algorithms that are critical to the entire system. Thanks to its modular structure,<br>Noosphere enables expanding its functionality by means of creating new service shards. The end<br>user is free to choose the services they trust, so parallel existence of two or more service shards<br>that have the same functionality but different implementation (for example, transaction mixers)<br>is the standard scheme of Noosphere operation.
+                        Noosphere does not use the concept forks. For a regular blockchain, a fork is the change of the built-in operation algorithms that are critical to the entire system. Thanks to its modular structure, Noosphere allows you to expand functionality by creating new service shards. The end user is free to choose the services they trust, so simultaneous existence of two or more service shards that have the same functionality but different implementation (for example, transaction mixers) is the standard order of operation of Noosphere.
 
                     </p>
                 </div>
@@ -247,7 +247,7 @@
                 <div class="title-lg mb-3">CBFT TECHNICAL</div>
 
                 <p class="text-md mb-4 pb-2">
-                    Convolutional Byzantine Fault Tolerance is the main consensus algorithm in Noosphere. Unlike popular PoS,<br>CBFT does not divide system nodes according to the size of a certain contribution. They are all equal and there<br>is just a set of criteria used for their selection:
+                    Convolutional Byzantine Fault Tolerance is the main consensus algorithm in Noosphere. Unlike the popular PoS,<br>CBFT does not distinguish system nodes by size contribution. They are all equal<br>and are chosen based on the following criteria:b
                 </p>
 
                 <p class="text-md text-yellow mb-4 pb-2">
@@ -274,7 +274,7 @@
                 </p>
 
                 <p class="text-md">
-                    where <img src="/en/img/formula-10.svg" alt=""></img> is the actual average input flow rate.<br>The proposed input flow model suggests that the time between incoming jobs <img src="/en/img/formula-9.svg" alt=""></img> is a continuous random value that may be<br>distributed according to different distribution laws, such as the exponential law, Poisson law, normal law, and uniform law.
+                    where <img src="/en/img/formula-10.svg" alt=""></img> is the actual average input flow rate.<br>The proposed input flow model suggests that the time between incoming jobs <img src="/en/img/formula-9.svg" alt=""></img> is a continuous random value that may be<br>distributed according to different distributions, such as the exponential distribution, Poisson distribution, normal distribution, and uniform distribution.
                 </p>
             </div>
         </div>
@@ -294,7 +294,7 @@
 
                     <div class="title-lg mb-3 pb-1">HYBRID SGX-CBFT ALGORITHM</div>
                     <p class="text-md">
-                        For critical services that may be expected to be under attack with a high probability, a user may use a hybrid <br>consensus protocol, SGX-CBFT. It works in the same way as the above-described Convolutional BFT, but network <br>participants get an additional opportunity of remote reliability verification of all neighboring nodes thanks to <br>the Intel SGX technology.
+                        For critical services that have a high probability to be under attack, the user may implement a hybrid consensus protocol, SGX-CBFT. It works the same way as the aforementioned Convolutional BFT, but network participants get an additional opportunity of remote reliability verification of all neighboring nodes thanks to the Intel SGX technology.
                     </p>
                 </div>
             </div>
@@ -313,9 +313,9 @@
 
                 <div class="text-center shardforks-text">
                     
-                    <div class="title-lg mb-4">ATTACKS PROTECTION</div>
+                    <div class="title-lg mb-4">CYBER SECURITY: TYPICAL ATTACKS</div>
                     <p class="text-md">
-                        Blockchain, like any internet-based information system, is a target for hackers. Besides the known type of attack,<br>DDoS, new methods appear for affecting specifically blockchain platforms. Analysis of all these threats, including<br>research into the shortcomings of the architecture of existing blockchain systems that have been subjected to attacks,<br>has made it possible to build effective methods for proactive defense into the Noosphere subsystems.
+                        Blockchain, like any internet-based information system, are susceptible to cyber attacks. Besides the best-known type of attack,DDoS, new methods appear targeting blockchain platforms specifically. Analysis of all these threats, including research into the shortcomings of the architecture of existing blockchain systems that have been subjected to attacks, has made it possible to build effective methods for proactive defense into the Noosphere subsystems.
                     </p>
                 </div>
             </div>
@@ -341,12 +341,12 @@
                 <div class="about-panel about-panel--right">
                     <div class="path--top">
                         <p class="mb-2 pb-1 text-md">
-                            on the basis of experience of comprehensive research into advanced blockchain technologies, cryptography, and cybernetics.
+                            based on comprehensive research into advanced blockchain technologies, cryptography, and cybernetics.
                         </p>
                     </div>
                     <div class="path--bottom">
                         <p class="mb-2 text-md">
-                            Thanks to its service-oriented approach, Noosphere creates the first blockchain ecosystem to become a new step in the development of information technology
+                            Thanks to its service-oriented approach, Noosphere creates the first blockchain ecosystem to define a new step in the development of information technology
                         </p>
                     </div>
                 </div>
@@ -357,9 +357,9 @@
         <div class="row">
 
             <div class="col-12 text-center">
-                <h2 class="title-lg mb-3">BE FIRST!</h2>
+                <h2 class="title-lg mb-3">BE THE FIRST!</h2>
                 <p class="text-md mb-4 pb-1">
-                    Stay tuned to the latest updates in development and sign up for our newsletter.
+                    Stay tuned to the latest updates and sign up for our newsletter.
                     <span class="d-none d-lg-block"></span>You’ll be the first to know when we launch NOOSPHERE
                 </p>
             </div>
@@ -375,7 +375,7 @@
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-round btn-default btn-orange btn-fluid submit_news" id="submit_news_footer">
-                            Sign Up
+                            Sign up
                         </button>
                     </div>
                     <div class="form-group text-center">
@@ -485,7 +485,7 @@ transform="translate(-1687 -570)"/>
                 <div class="row justify-content-center">
                     <div class="col-9">
                         <div class="modal-text">
-                            Stay tuned to the latest updates in development and sign up for our newsletter. You’ll be the first to know when we launch NOOSPHERE.
+                            Stay tuned to the latest updates and sign up for our newsletter. You’ll be the first to know when we launch NOOSPHERE.
                         </div>
                     </div>
                 </div>
@@ -523,10 +523,10 @@ transform="translate(-1687 -570)"/>
         
         
 
-        <script type="text/javascript" src="/en/js/vendor.js?v=1.0.3"></script>
-        <script type="text/javascript" src="/en/js/app.js?v=1.0.3"></script>
-        <script type="text/javascript" src="/en/js/main.js?v=1.0.3"></script>
-            <script type="text/javascript" src="/en/js/technology.js?v=1.0.3"></script>
+        <script type="text/javascript" src="/en/js/vendor.js?v=1.0.4"></script>
+        <script type="text/javascript" src="/en/js/app.js?v=1.0.4"></script>
+        <script type="text/javascript" src="/en/js/main.js?v=1.0.4"></script>
+            <script type="text/javascript" src="/en/js/technology.js?v=1.0.4"></script>
     
                     <script type="text/javascript" src="/en/js/jquery.fancybox.min.js"></script>
     </body>
