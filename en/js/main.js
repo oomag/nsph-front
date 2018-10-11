@@ -8,8 +8,8 @@ $(function () {
 
 });
 
-$(function() {
-    $('.qq-link').on('click', function(e) {
+$(function () {
+    $('.qq-link').on('click', function (e) {
         e.preventDefault();
         let qrLink = $(e.currentTarget);
         qrLink.toggleClass('qq-link--active');
@@ -22,6 +22,16 @@ $(function() {
         }
     });
 });
+
+$(function() {
+    $('.team__link').click(function (e) {
+        e.preventDefault();
+        let text = $(this).text();
+        $($(this).attr('href')).slideToggle(200);
+        $(this).text(text == 'more' ? 'hide' : 'more');
+        return false;
+    });
+})
 
 $(function () {
     // $('#submit').on('click', e => {
@@ -39,7 +49,7 @@ $(function () {
 function sumbitNewsSubscriber(e) {
     e.preventDefault();
 
-    try{
+    try {
         var form = $(e.target).closest('.form');
         var email_elem = form.find('.email_news_subscriber');
 
@@ -48,13 +58,13 @@ function sumbitNewsSubscriber(e) {
 
         var msg = 'Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you.';
         form.find('.submit_news').addClass('btn-disabled');
-        var sendInfo = { email: email_elem.val() };
+        var sendInfo = {email: email_elem.val()};
         $.ajax({
             type: "POST",
             url: "/news_subscribers",
             data: sendInfo,
             dataType: 'json',
-            success: function(){
+            success: function () {
                 email_elem.val('');
                 errorMessageElement.html(msg);
                 errorMessageElement.slideDown(300);
