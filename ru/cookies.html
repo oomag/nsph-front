@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <title>Noosphere</title>
@@ -11,7 +11,8 @@
         <meta name="format-detection" content="telephone=no">
         <meta http-equiv="x-rim-auto-match" content="none">
         
-                                        <link rel="stylesheet" type="text/css" href="/en/css/font-awesome.min.css">
+                            <link rel="stylesheet" type="text/css" href="/en/css/swiper.css">
+                <link rel="stylesheet" type="text/css" href="/en/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="/en/css/app.min.css?v=1.1.13">
         <link href="/en/img/favicon.png?v=1.1.13" rel="shortcut icon">
         <link href="/en/img/favicon.png?v=1.1.13" rel="shortcut icon" type="image/x-icon">
@@ -29,12 +30,13 @@
     </head>
     <body>
         
-            <div class="wrapper">
+        
+    <div class="wrapper">
 
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
     <div class="container">
-        <a class="navbar-brand" href="/ko/index.html">
+        <a class="navbar-brand" href="/ru/index.html">
             <img src="/en/img/logo-icon.svg" alt="" class="navbar-logo navbar-logo--icon">
             <img src="/en/img/logo.svg" alt="" class="navbar-logo navbar-logo--full">
 
@@ -44,10 +46,10 @@
 
             <ul class="navbar-nav">
                                     <li class="nav-item">
-                        <a class="nav-link" href="/ko/technology.html"></a>
+                        <a class="nav-link" href="/ru/technology.html"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ko/#ServiceEcosystem">
+                        <a class="nav-link anchor" data-hash="ServiceEcosystem" href="#">
                         </a>
                     </li>
                     
@@ -57,7 +59,7 @@
                         
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="/ko/team-inner.html"></a>
+                        <a class="nav-link" href="/ru/team-inner.html"></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link lang-link" href=""></a>
@@ -77,10 +79,10 @@
             <ul class="navbar-nav">
 
                                     <li class="nav-item">
-                        <a class="nav-link" href="/ko/technology.html"></a>
+                        <a class="nav-link" href="/ru/technology.html"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ko/#ServiceEcosystem">
+                        <a class="nav-link anchor" data-hash="ServiceEcosystem" href="#">
                         </a>
                     </li>
                     
@@ -90,7 +92,7 @@
                         
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="/ko/team-inner.html"></a>
+                        <a class="nav-link" href="/ru/team-inner.html"></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link lang-link" href=""></a>
@@ -104,32 +106,34 @@
 
     </div>
 
-</nav>        <section class="section section-team-inner">
-
+</nav>        <section class="section cookie__policy">
     <div class="container">
-
-        <div class="row justify-content-center">
-
-            <div class="col-12 text-center">
-                <h2 class="title-lg mb-3"></h2>
-            </div>
-
-            <div class="col-sm-6">
-                <p class="text-md mb-4 pb-1 text-center">
-                    
-                </p>
-            </div>
-
-        </div>
-
         <div class="row">
-
-            
-
+            <div class="col-12">
+                <div class="policy__title">
+                    Cookies and consent
+                </div>
+                <div class="coockie__content">
+                    <p>Now, this is an area that most organisations have probably overlooked. There was a small mention of consent and cookies in the
+                        draft guidance and this is still in the final consent guidance too, but essentially where you need consent for cookies (and
+                        there are very limited exemptions to cookie consent) that consent will need to be GDPR compliant.</p>
+                    <p>
+                        This is a significant change for most organisations that are using cookies. Essentially if you are using non-essential cookies
+                        (e.g. for Google Analytics) you need to now get GDPR compliant consent to continue to use them. So, if like most businesses,
+                        you are using the generic “we use cookies, read about it in our cookie policy and click OK to say you are happy for us to use
+                        cookies (or turn them off in your browser)” wording, you will not be compliant come the 25th May as your cookie consent now
+                        needs to be GDPR compliant, meaning:</p>
+                    <ul class="cookie__list">
+                        <li class="cookie__item">You can’t use the existing “implied” consent</li>
+                        <li class="cookie__item">You must set out clearly what cookies you are using</li>
+                        <li class="cookie__item">You must seek positive opt-in to use cookies meaning you will need to make sure you provide an option to website visitors to opt-in to your use of cookies (the cookie guidance says “To ensure that consent is freely given, users should be able to disable cookies, and you should make this easy to do“)</li>
+                        <li class="cookie__item">You must be able to demonstrate that consent for cookies was given</li>
+                    </ul>
+                    <p>In the cookie guidance from the ICO it is noted “The ICO will take a risk-based approach to enforcement in this area, in line with our regulatory action policy” which may indicate some levity unless you’re collecting personal data (particularly special categories of personal data), so maybe we’ll see what comes of any enforcement in this area. That said, if you’re using cookies that track behaviour (which could include things like Hubspot’s functionality for building up a profile of inbound marketing leads) you are potentially at risk from non-compliance…</p>
+                </div>
+            </div>
         </div>
-
     </div>
-
 </section>        <footer class="section section-footer">
 
         <div class="container">
@@ -221,29 +225,66 @@
         
     </div>
 
-</footer>        <div class="coockie">
-    
-    <div class="row justify-content-center align-items-center">
-        <div class="col-md-10">
-            <div class="coockie__title">
-                Cookie Policy
+</footer>        <!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content form">
+            <div class="modal-header">
+                <div class="modal-title" id="exampleModalLabel"></div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <div class="coockie__text">
-                This site uses cookies and other tracking technologies to assist with navigation and your ability to provide feedback, analyse your use of our products and services, assist with our promotional and marketing efforts, and provide content from third parties.
-                <a href="cookies.html" class="cookie__link" target="_blank">Cookie Policy</a>
+            <div class="modal-body">
+                <div class="row justify-content-center">
+                    <div class="col-9">
+                        <div class="modal-text">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <form action="/" class="modal-form-elem">
+                        <input type="email" class="modal-input email_news_subscriber" placeholder="Your e-mail">
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="col-md-2">
-            <a href="#" class="btn btn-round btn-default btn-orange btn-fluid btn-coockie">Accept</a>
+            <div class="modal-footer">
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <button type="submit" class="btn btn-round btn-default btn-orange btn-fluid submit_news"
+                                id="submit"></button>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-9">
+                        <div class="form-group text-center modal-text">
+                            <p class="news-subscribe-error-message" style="padding-top:10px"></p>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
     </div>
+
         
         
 
         <script type="text/javascript" src="/en/js/vendor.js?v=1.1.13"></script>
         <script type="text/javascript" src="/en/js/app.js?v=1.1.13"></script>
         <script type="text/javascript" src="/en/js/main.js?v=1.1.13"></script>
-                            </body>
+            <script type="text/javascript" src="/ru/js/translate.js?v=1.1.13"></script>
+    
+    
+    
+                    </body>
 </html>

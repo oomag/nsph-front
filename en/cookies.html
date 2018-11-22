@@ -11,8 +11,8 @@
         <meta name="format-detection" content="telephone=no">
         <meta http-equiv="x-rim-auto-match" content="none">
         
-                	<link rel="stylesheet" type="text/css" href="/en/css/jquery.fancybox.min.css">
-                        <link rel="stylesheet" type="text/css" href="/en/css/font-awesome.min.css">
+                            <link rel="stylesheet" type="text/css" href="/en/css/swiper.css">
+                <link rel="stylesheet" type="text/css" href="/en/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="/en/css/app.min.css?v=1.1.13">
         <link href="/en/img/favicon.png?v=1.1.13" rel="shortcut icon">
         <link href="/en/img/favicon.png?v=1.1.13" rel="shortcut icon" type="image/x-icon">
@@ -49,7 +49,7 @@
                         <a class="nav-link" href="/en/technology.html">Technology</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/en/#ServiceEcosystem">Services
+                        <a class="nav-link anchor" data-hash="ServiceEcosystem" href="#">Services
                         </a>
                     </li>
                     
@@ -82,7 +82,7 @@
                         <a class="nav-link" href="/en/technology.html">Technology</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/en/#ServiceEcosystem">Services
+                        <a class="nav-link anchor" data-hash="ServiceEcosystem" href="#">Services
                         </a>
                     </li>
                     
@@ -106,223 +106,35 @@
 
     </div>
 
-</nav>        <section class="section section-anatomy">
-
-    <div class="container">
-
-        <div class="row mb-0 mb-lg-5 pb-3">
-
-            <div class="col-10 text-right">
-
-                <div class="about-panel--macbook text-center">
-                    <div class="title-lg">NOOSPHERE ANATOMY</div>
-                    <img src="/en/img/ref-diapo-1.png" alt="" class="about-panel--macbook-img">
-                    <a href="/en/img/anatomy.jpg" class="about-panel--link" data-fancybox="data-fancybox">
-                        <p class="text-md text-center mb-0">
-                            See the diagram
-                        </p>
-                        <img src="/en/img/glass.png" alt="" class="ml-2">
-                    </a>
-                </div>
-
-            </div>
-            <div class="col-lg-4">
-                <div class="about-panel about-panel--left">
-                    <div class="title-lg title-hr">
-                        Sharding is<span class="d-none d-lg-block"></span>at the heart<span class="d-none d-lg-block"></span>of the Noosphere<span class="d-none d-lg-block"></span>architecture
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="about-panel about-panel--right about-panel--parts-dotted">
-
-                    <div class="path--top">
-                        <p class="mb-2 pb-1 text-md">
-                            Each shard in Noosphere is a blockchain capable of operating completely independently as they do not not require constant connection with other shards
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-10 text-right">
-
-                <div class="about-panel--macbook text-center">
-                    <div class="title-lg">NOOSPHERE CBFT</div>
-                    <img src="/en/img/ref-diapo-2.png" alt="" class="about-panel--macbook-img">
-                    <a href="/en/img/cbft.jpg" class="about-panel--link" data-fancybox="data-fancybox">
-                        <p class="text-md text-center mb-0">
-                            See the diagram
-                        </p>
-                        <img src="/en/img/glass.png" alt="" class="ml-2">
-                    </a>
-                </div>
-
-            </div>
-            <div class="col-lg-4">
-                <div class="about-panel about-panel--left">
-                    <div class="title-lg title-hr">
-                        Every Noosphere<span class="d-none d-lg-block"></span>shard consists of<span class="d-none d-lg-block"></span>a set of nodes with<span class="d-none d-lg-block"></span>various functions
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="about-panel about-panel--right about-panel--nohr">
-
-                    <div class="path--top">
-                        <p class="mb-2 pb-1 text-md">
-                            The node that participates in the consensus algorithm, gathering transactions, forming and validating blocks is called the Twig Node. The node that participates in the CBFT consensus algorithm speeding up its operation is called the Stem Node. The function of the Stem Node is solely auxiliary: the system can function without it, but a different consensus algorithm will be used in that case. Anyone can host a Twig Node for a shard by filing an application and passing the selection process (see the Technical White Paper for more information). The Stem Node is maintained by the creator of the shard if necessary, for its operation, to use the quick and efficient CBFT consensus algorithm. If the data processing speed requirements are not as important, a shard can function independently, using PoET without a Stem Node.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>        <section class="section section-shardforks">
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-10 text-right">
-
-                <div class="about-panel--macbook text-center">
-                    <div class="title-lg">Noosphere Shard Diagram</div>
-                    <img src="/en/img/ref-diapo-3.png" alt="" class="about-panel--macbook-img">
-                    <a href="/en/img/shards.jpg" class="about-panel--link" data-fancybox="data-fancybox">
-                        <p class="text-md text-center mb-0">
-                            See the diagram
-                        </p>
-                        <img src="/en/img/glass.png" alt="" class="ml-2">
-                    </a>
-                </div>
-
-            </div>
-            <div class="col-lg-4">
-                <div class="about-panel about-panel--left">
-                    <div class="title-lg title-hr">
-                        There are<span class="d-none d-lg-block"></span>two approaches<span class="d-none d-lg-block"></span>to creating<span class="d-none d-lg-block"></span>shard-services
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="about-panel about-panel--right about-panel--nohr">
-
-                    <div class="path--top">
-                        <p class="mb-2 pb-1 text-md">
-                            The first approach is simply using the structure of blockchain shards that store key-value records that define the functionality of the service under defined rules. Typical examples of this implementation are DNS services, routing, validating centers. The second approach is more comprehensive, and it offers more resource-intensive services. Their operation requires computations that will define the contents of the blockchain (smart contracts), otherwise the blockchain will only carry out administrative functions when the output data is not intended to be stored on blockchain (rendering, scientific research, dApps). In both cases each shard must provide its API description upon its introduction to the system. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12">
-
-                <div class="shardforks-image shardforks-image--dark">
-                    <img src="/en/img/shardforks.png" alt="" class="mb-4">
-                </div>
-
-                <div class="text-light text-center shardforks-text">
-
-                    <div class="title-lg mb-4">SHARD FORKS</div>
-                    <p class="text-md">
-                        Noosphere does not use the concept forks. For a regular blockchain, a fork is the change of the built-in operation algorithms that are critical to the entire system. Thanks to its modular structure, Noosphere allows you to expand functionality by creating new service shards. The end user is free to choose the services they trust, so simultaneous existence of two or more service shards that have the same functionality but different implementation (for example, transaction mixers) is the standard order of operation of Noosphere.
-
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>        <section class="section section-technical">
+</nav>        <section class="section cookie__policy">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="title-lg mb-3">CBFT TECHNICAL</div>
-
-                <p class="text-md mb-4 pb-2">
-                    Convolutional Byzantine Fault Tolerance is the main consensus algorithm in Noosphere. Unlike the popular PoS,<br>CBFT does not distinguish system nodes by size contribution. They are all equal<br>and are chosen based on the following criteria
-                </p>
-
-                <p class="text-md text-yellow mb-4 pb-2">
-                    – COMPUTING POWER <br>– INTERNET CONNECTION QUALITY <br>– HAVING ENOUGH COINS FOR THE DEPOSIT
-                </p>
-
-                <p class="text-md mb-4 pb-2">
-                    As the CBFT consensus algorithm was being developed, statistical information was collected reflecting change<br>of the input data flow rate in the distributed network depending on the time it took to distribute a candidate block,<br>its size, and processing time. The approximation of the obtained statistics is carried out with the help of the<br>piecewise-polynomial interpolating cubic spline <img src="/en/img/formula.svg" alt=""></img> with the setting of boundary conditions, i.e. for each section<br><img src="/en/img/formula-1.svg" alt=""></img> with the number j the approximation function <img src="/en/img/formula.svg" alt=""></img> has the form of a polynomial.
-                </p>
-
-                <p class="text-md mb-4 pb-1">
-                    <img src="/en/img/formula-3.svg" alt="">
-                    
-                </p>
-
-                <p class="text-md mb-4 pb-2">
-                    The boundary conditions consist in the periodicity condition, i.e. coincidence of the values of the first and second<br>derivatives on the borders of the interval <img src="/en/img/formula-1.svg" alt=""></img>. The plotting of the spline can be reduced to determining the multiple<br>ratios <img src="/en/img/formula-4.svg" alt=""></img> by solving systems of linear equations. The interpolating spline <img src="/en/img/formula.svg" alt=""></img> is plotted <br> so as to satisfy the interpolation condition <img src="/en/img/formula-5.svg" alt=""></img> for the table function <img src="/en/img/formula-6.svg" alt=""></img><br>To obtain the specific dependence of the input flow rate on time <img src="/en/img/formula-7.svg" alt=""></img>, given the average rate <img src="/en/img/formula-10.svg" alt=""></img>, it is necessary to<br>multiply the obtained spline <img src="/en/img/formula.svg" alt=""></img> by the average rate and divide it by the average value of the spline <img src="/en/img/formula-8.svg" alt=""></img> itself: <br>
-                </p>
-
-                <p class="text-md mb-4 pb-2">
-                    <img src="/en/img/formula-2.svg" alt="">
-                    
-                    
-                </p>
-
-                <p class="text-md">
-                    where <img src="/en/img/formula-10.svg" alt=""></img> is the actual average input flow rate.<br>The proposed input flow model suggests that the time between incoming jobs <img src="/en/img/formula-9.svg" alt=""></img> is a continuous random value that may be<br>distributed according to different distributions, such as the exponential distribution, Poisson distribution, normal distribution, and uniform distribution.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>        <section class="section section-algorithm">
-    <div class="container">
-        
-        <div class="row">
-
-
-            <div class="col-12">
-
-                <div class="shardforks-image shardforks-image--dark mt-0">
-                    <img src="/en/img/algorithm.svg" alt="" class="mb-4">
+                <div class="policy__title">
+                    Cookies and consent
                 </div>
-                <div class="text-light text-center shardforks-text">
-
-                    <div class="title-lg mb-3 pb-1">HYBRID SGX-CBFT ALGORITHM</div>
-                    <p class="text-md">
-                        For critical services that have a high probability to be under attack, the user may implement a hybrid consensus protocol, SGX-CBFT. It works the same way as the aforementioned Convolutional BFT, but network participants get an additional opportunity of remote reliability verification of all neighboring nodes thanks to the Intel SGX technology.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>        <section class="section section-protection">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-
-                <div class="shardforks-image shardforks-image--light mt-0">
-                    <img src="/en/img/attackprotection.svg" alt="" class="mb-4">
-                </div>
-
-                <div class="text-center shardforks-text">
-                    
-                    <div class="title-lg mb-4">CYBER SECURITY: TYPICAL ATTACKS</div>
-                    <p class="text-md">
-                        Blockchain, like any internet-based information system, are susceptible to cyber attacks. Besides the best-known type of attack,DDoS, new methods appear targeting blockchain platforms specifically. Analysis of all these threats, including research into the shortcomings of the architecture of existing blockchain systems that have been subjected to attacks, has made it possible to build effective methods for proactive defense into the Noosphere subsystems.
-                    </p>
+                <div class="coockie__content">
+                    <p>Now, this is an area that most organisations have probably overlooked. There was a small mention of consent and cookies in the
+                        draft guidance and this is still in the final consent guidance too, but essentially where you need consent for cookies (and
+                        there are very limited exemptions to cookie consent) that consent will need to be GDPR compliant.</p>
+                    <p>
+                        This is a significant change for most organisations that are using cookies. Essentially if you are using non-essential cookies
+                        (e.g. for Google Analytics) you need to now get GDPR compliant consent to continue to use them. So, if like most businesses,
+                        you are using the generic “we use cookies, read about it in our cookie policy and click OK to say you are happy for us to use
+                        cookies (or turn them off in your browser)” wording, you will not be compliant come the 25th May as your cookie consent now
+                        needs to be GDPR compliant, meaning:</p>
+                    <ul class="cookie__list">
+                        <li class="cookie__item">You can’t use the existing “implied” consent</li>
+                        <li class="cookie__item">You must set out clearly what cookies you are using</li>
+                        <li class="cookie__item">You must seek positive opt-in to use cookies meaning you will need to make sure you provide an option to website visitors to opt-in to your use of cookies (the cookie guidance says “To ensure that consent is freely given, users should be able to disable cookies, and you should make this easy to do“)</li>
+                        <li class="cookie__item">You must be able to demonstrate that consent for cookies was given</li>
+                    </ul>
+                    <p>In the cookie guidance from the ICO it is noted “The ICO will take a risk-based approach to enforcement in this area, in line with our regulatory action policy” which may indicate some levity unless you’re collecting personal data (particularly special categories of personal data), so maybe we’ll see what comes of any enforcement in this area. That said, if you’re using cookies that track behaviour (which could include things like Hubspot’s functionality for building up a profile of inbound marketing leads) you are potentially at risk from non-compliance…</p>
                 </div>
             </div>
         </div>
     </div>
-</section>
-        <footer class="section section-footer">
+</section>        <footer class="section section-footer">
 
         <div class="container">
 
@@ -519,23 +331,7 @@ transform="translate(-1687 -570)"/>
         </div>
     </div>
 </div>
-        <div class="coockie">
-    
-    <div class="row justify-content-center align-items-center">
-        <div class="col-md-10">
-            <div class="coockie__title">
-                Cookie Policy
-            </div>
-            <div class="coockie__text">
-                This site uses cookies and other tracking technologies to assist with navigation and your ability to provide feedback, analyse your use of our products and services, assist with our promotional and marketing efforts, and provide content from third parties.
-                <a href="cookies.html" class="cookie__link" target="_blank">Cookie Policy</a>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <a href="#" class="btn btn-round btn-default btn-orange btn-fluid btn-coockie">Accept</a>
-        </div>
-    </div>
-</div>
+
     </div>
 
         
@@ -544,8 +340,9 @@ transform="translate(-1687 -570)"/>
         <script type="text/javascript" src="/en/js/vendor.js?v=1.1.13"></script>
         <script type="text/javascript" src="/en/js/app.js?v=1.1.13"></script>
         <script type="text/javascript" src="/en/js/main.js?v=1.1.13"></script>
-            <script type="text/javascript" src="/en/js/technology.js?v=1.1.13"></script>
+            <script type="text/javascript" src="/en/js/translate.js?v=1.1.13"></script>
     
-                    <script type="text/javascript" src="/en/js/jquery.fancybox.min.js"></script>
-    </body>
+    
+    
+                    </body>
 </html>
